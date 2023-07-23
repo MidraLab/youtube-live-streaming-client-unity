@@ -16,7 +16,7 @@ namespace Mochineko.YouTubeLiveStreamingClient.Responses
         [JsonProperty("concurrentViewers")]
         public uint? ConcurrentViewers { get; private set; }
 
-        [JsonProperty("activeLiveChatId"), JsonRequired]
-        public string ActiveLiveChatId { get; private set; } = string.Empty;
+        [JsonProperty("activeLiveChatId")]
+        public string? ActiveLiveChatId { get; private set; }
     }
 }
